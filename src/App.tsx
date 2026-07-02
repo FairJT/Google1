@@ -394,7 +394,17 @@ export default function App() {
         <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">
           
           {/* Right section: Branding & Logo */}
-          <div className="flex items-center gap-3">
+          <div 
+            onClick={() => {
+              if (isGuest) {
+                setActiveTab("feed");
+              } else if (currentUser) {
+                setActiveTab(getDefaultTabForRole(currentUser.role));
+              }
+            }}
+            className="flex items-center gap-3 cursor-pointer hover:opacity-90 active:scale-[0.98] transition-all"
+            title="بازگشت به صفحه اصلی"
+          >
             <div className="w-9 h-9 rounded-xl bg-[#0284c7] flex items-center justify-center shadow-md">
               <Users className="w-5 h-5 text-white" />
             </div>
