@@ -3,6 +3,7 @@ export type UserRole = "client" | "artist" | "manager" | "service-staff";
 export interface Skill {
   name: string;
   category: string; // e.g. "رنگ مو", "ناخن", "میکاپ", "پوست"
+  level?: number; // 0-100 progress percentage
 }
 
 export interface PortfolioItem {
@@ -164,6 +165,14 @@ export interface User {
   reviews?: Review[];
   rating?: number;
   resumeText?: string;
+  isVerified?: boolean;
+  uploadedCertificates?: {
+    id: string;
+    title: string;
+    documentUrl: string;
+    status: "pending" | "approved" | "rejected";
+    uploadedAt: string;
+  }[];
   
   // Toggles for availability
   acceptingRequests?: boolean; // پذیرش درخواست مشتری

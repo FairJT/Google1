@@ -169,7 +169,24 @@ export const seedUsers: User[] = [
       { id: "p1_5", imageUrl: "https://images.unsplash.com/photo-1605497746444-1ae0245a1980?q=80&w=400&auto=format&fit=crop", title: "احیای مو به روش پلکس تراپی اولاپلکس", description: "درمان فیبرهای کراتینی آسیب دیده در اثر اتوکشی مکرر" }
     ],
     acceptingRequests: true,
-    openForHiring: true
+    openForHiring: true,
+    isVerified: false,
+    uploadedCertificates: [
+      {
+        id: "cert-1",
+        title: "مدرک پلاتینیوم L'Oréal Professionnel پاریس",
+        documentUrl: "https://images.unsplash.com/photo-1589330694653-ded6df03f754?q=80&w=600&auto=format&fit=crop",
+        status: "pending",
+        uploadedAt: "1405/04/01"
+      },
+      {
+        id: "cert-2",
+        title: "گواهی‌نامه تکنیک AirTouch از آکادمی ولادیمیر سارباش",
+        documentUrl: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=600&auto=format&fit=crop",
+        status: "approved",
+        uploadedAt: "1405/03/25"
+      }
+    ]
   },
   {
     id: "a2",
@@ -227,7 +244,17 @@ export const seedUsers: User[] = [
       { id: "p3_3", imageUrl: "https://images.unsplash.com/photo-1604654894611-6973b376cbde?q=80&w=400&auto=format&fit=crop", title: "کاشت فرنچ کلاسیک با بیبی بومر", description: "محوشدگی ملایم صورتی و شیری بسیار طبیعی و شیک" }
     ],
     acceptingRequests: true,
-    openForHiring: true
+    openForHiring: true,
+    isVerified: false,
+    uploadedCertificates: [
+      {
+        id: "cert-3",
+        title: "مدال طلای فستیوال ناخن NailMaster استانبول ۲۰۲۴",
+        documentUrl: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=600&auto=format&fit=crop",
+        status: "pending",
+        uploadedAt: "1405/04/03"
+      }
+    ]
   },
   {
     id: "a4",
